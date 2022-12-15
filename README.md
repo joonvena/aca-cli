@@ -2,7 +2,7 @@
 
 <h1 align="center"> aca-cli - CLI helper tool to deploy applications to Azure Container Apps  </h1>
 
-<p> This tool allows to deploy to multiple environments using one yaml definition file.  </p>
+<p> This tool allows to deploy to multiple environments using one yaml definition file. You can find demo repository that shows the usage with Github workflows from here: [https://github.com/joonvena/aca-cli-demo](https://github.com/joonvena/aca-cli-demo) </p>
 
 <h2> Example </h2>
 
@@ -34,6 +34,8 @@ environments:
           - name: POSTGRES_DB
             value: postgres
 ```
+
+For now the main application container is expected to be defined as first container in `containers` block. Purpose of the `$tag` is to tell the `aca-cli` that this value should be replaced. Currently it looks value for this in `GITHUB_SHA` variable or you can also give the tag from the cli using `-t` flag.
 
 By default Ingress is set as external and port is set to 8080. If you want to override this you can add following definition to the environment:
 
