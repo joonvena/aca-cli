@@ -2,7 +2,7 @@
 
 <h1 align="center"> aca-cli - CLI helper tool to deploy applications to Azure Container Apps  </h1>
 
-<p> This tool allows to deploy to multiple environments using one yaml definition file. You can find demo repository that shows the usage with Github workflows from here: [https://github.com/joonvena/aca-cli-demo](https://github.com/joonvena/aca-cli-demo) </p>
+<p> This tool allows to deploy to multiple environments using one yaml definition file. You can find demo repository that shows the usage with Github workflows from here: <a href="https://github.com/joonvena/aca-cli-demo">https://github.com/joonvena/aca-cli-demo</a> </p>
 
 <h2> Example </h2>
 
